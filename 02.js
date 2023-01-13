@@ -12,8 +12,12 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
-}
 
+  var  e=0,t="";
+    for (var q=0;q<strings.length;q+=1){if(e<strings[q].length){e=strings[q].length;t=strings[q]}};return t
+}
+var e=['ha','red','pulpos','sol','123456']
+console.log(stringMasLarga(e))
 // No modifiques nada debajo de esta linea //
 
 module.exports = stringMasLarga
